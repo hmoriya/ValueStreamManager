@@ -1,24 +1,20 @@
+using Archway.SharedKernel.Domain.Exceptions;
+using Archway.SharedKernel.Domain.Specifications;
+
 namespace Archway.SharedKernel.Domain.ValueObjects;
 
 public class DescriptionContent : ValueObject
 {
     public string Value { get; }
 
-    public const int MinLength = 0;
-    public const int MaxLength = 512;
+    private const int MaxLength = 512;
 
     public DescriptionContent(string value)
     {
-        if (string.IsNullOrEmpty(value))
-            throw new ArgumentException("DescriptionContent cannot be null or empty.", nameof(value));
-        if (value.Length < MinLength || value.Length > MaxLength)
-            throw new ArgumentException($"DescriptionContent length must be between {MinLength} and {MaxLength} characters.", nameof(value));
+        Validate(value);
         Value = value;
     }
-    public static ValidSpecification<TitleName> GetLengthSpecification()
-    {
-        return new ValidSpecification<TitleName>(desc => desc.Value.Length >= MinLength && desc.Value.Length <= MaxLength);
-    }
+   
     public override bool Equals(ValueObject? other)
     {
         if (other is null || GetType() != other.GetType())
@@ -30,5 +26,20 @@ public class DescriptionContent : ValueObject
     protected override int GetCustomHashCode()
     {
         return Value.GetHashCode();
+    }
+    private static void Validate(string value)
+    {
+        Specification<string> notNullOrEmptySpec = new NotNullOrWhiteSpaceSpecification();
+        Specification<string> maxLengthSpec = new MaxLengthSpecification(MaxLength);
+
+        if (!notNullOrEmptySpec.IsSatisfiedBy(value))
+        {
+            throw new ValueNotValidException("Value cannot be null or empty.");
+        }
+
+        if (!maxLengthSpec.IsSatisfiedBy(value))
+        {
+            throw new ValueExceedsMaxLengthException("Value exceeds the maximum length.");
+        }
     }
 }
