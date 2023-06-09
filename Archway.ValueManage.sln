@@ -3,16 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerApp", "BlazorServerApp\BlazorServerApp.csproj", "{402977FA-4BCF-44EE-B4E4-BB4E3FA2C569}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archway.SharedKernel", "Archway.SharedKernel\Archway.SharedKernel.csproj", "{A1A5B195-C790-4F61-BC9C-67D44C861CB3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archway.ValueManage.Domain", "Archway.ValueManage.Domain\Archway.ValueManage.Domain.csproj", "{46AAED5B-9071-47D6-A5A8-DC2E2FB32289}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0B461522-4A43-4472-A4E8-3373735B506A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B34E4993-969B-4563-BCA9-2AFBDC3524C3}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,24 +10,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{402977FA-4BCF-44EE-B4E4-BB4E3FA2C569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{402977FA-4BCF-44EE-B4E4-BB4E3FA2C569}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{402977FA-4BCF-44EE-B4E4-BB4E3FA2C569}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{402977FA-4BCF-44EE-B4E4-BB4E3FA2C569}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A1A5B195-C790-4F61-BC9C-67D44C861CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1A5B195-C790-4F61-BC9C-67D44C861CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1A5B195-C790-4F61-BC9C-67D44C861CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1A5B195-C790-4F61-BC9C-67D44C861CB3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{46AAED5B-9071-47D6-A5A8-DC2E2FB32289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46AAED5B-9071-47D6-A5A8-DC2E2FB32289}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46AAED5B-9071-47D6-A5A8-DC2E2FB32289}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46AAED5B-9071-47D6-A5A8-DC2E2FB32289}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{A1A5B195-C790-4F61-BC9C-67D44C861CB3} = {0B461522-4A43-4472-A4E8-3373735B506A}
-		{46AAED5B-9071-47D6-A5A8-DC2E2FB32289} = {0B461522-4A43-4472-A4E8-3373735B506A}
-		{402977FA-4BCF-44EE-B4E4-BB4E3FA2C569} = {0B461522-4A43-4472-A4E8-3373735B506A}
 	EndGlobalSection
 EndGlobal
