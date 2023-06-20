@@ -31,3 +31,6 @@ public class BusinessCapability : AggregateRoot
     }
     
 }
+//
+// Validate＝＞action
+// is a 
