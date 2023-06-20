@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{A881BCB4-553C-41EC-9518-11390153827D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{63F3A6F4-CCBE-4B12-8BCD-05E03C7D58D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastracture", "Infrastracture", "{0B634E73-D4C3-40F5-9AE6-E32C736FE10A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backends", "Backends", "{FBBFD986-0AD7-41B2-B33C-EF55532DB489}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerApp", "..\src\frontend\BlazorServerApp\BlazorServerApp.csproj", "{78B24935-44CD-478B-B303-014D7351A523}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archway.ValueManage.Domain", "..\src\domain\Archway.ValueManage.Domain\Archway.ValueManage.Domain.csproj", "{BAA85ECA-7429-4BC4-BFBF-17993F5D3BE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Archway.Core", "Archway.Core", "{B901BB3F-05E3-44FB-9203-968CF3CEDB03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archway.SharedKernel", "..\src\sharedkernel\Archway.SharedKernel\Archway.SharedKernel.csproj", "{471430C1-E95C-46C7-8F84-0BC38C8B548C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UseCases", "UseCases", "{E5197A41-95D1-4A07-A021-B214327C9C6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archway.ValueManage.Usecase", "..\src\usecase\Archway.ValueManage.Usecase\Archway.ValueManage.Usecase.csproj", "{56F9EFBF-B1C0-46C8-9863-D8E159D09A80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{78B24935-44CD-478B-B303-014D7351A523} = {A881BCB4-553C-41EC-9518-11390153827D}
+		{BAA85ECA-7429-4BC4-BFBF-17993F5D3BE6} = {63F3A6F4-CCBE-4B12-8BCD-05E03C7D58D6}
+		{471430C1-E95C-46C7-8F84-0BC38C8B548C} = {B901BB3F-05E3-44FB-9203-968CF3CEDB03}
+		{56F9EFBF-B1C0-46C8-9863-D8E159D09A80} = {E5197A41-95D1-4A07-A021-B214327C9C6A}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78B24935-44CD-478B-B303-014D7351A523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B24935-44CD-478B-B303-014D7351A523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B24935-44CD-478B-B303-014D7351A523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B24935-44CD-478B-B303-014D7351A523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAA85ECA-7429-4BC4-BFBF-17993F5D3BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAA85ECA-7429-4BC4-BFBF-17993F5D3BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAA85ECA-7429-4BC4-BFBF-17993F5D3BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAA85ECA-7429-4BC4-BFBF-17993F5D3BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{471430C1-E95C-46C7-8F84-0BC38C8B548C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{471430C1-E95C-46C7-8F84-0BC38C8B548C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{471430C1-E95C-46C7-8F84-0BC38C8B548C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{471430C1-E95C-46C7-8F84-0BC38C8B548C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56F9EFBF-B1C0-46C8-9863-D8E159D09A80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56F9EFBF-B1C0-46C8-9863-D8E159D09A80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56F9EFBF-B1C0-46C8-9863-D8E159D09A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56F9EFBF-B1C0-46C8-9863-D8E159D09A80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
